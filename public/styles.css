@@ -1,0 +1,153 @@
+:root {
+    --bg-green: #65b651;
+    --bg-green-hover: #469135;
+}
+
+.card-login {
+    max-width: 400px;
+    margin: auto;
+    top: 25vh;
+    border-radius: 1rem;
+    border: 0px;
+}
+
+.body-login{
+    background: var(--bg-green);
+}
+
+.boton-zysac{
+    background: var(--bg-green)!important;
+    border: var(--bg-green)!important;
+}
+
+.boton-zysac:hover{
+    background: var(--bg-green-hover)!important;
+}
+
+.boton-nav{
+    margin-right: .5rem;
+}
+
+.menu-zysac{
+    width: auto;
+    /* height: 60vh; */
+    border-radius: 1rem;
+    background: var(--bg-green)!important;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.item-menu{
+    background: var(--bg-green)!important;
+    border: 0px!important;
+    border-radius: 0.5rem;
+}
+
+.indicador{
+    width: 200px;
+    height: 7px;
+    background-color:blue;
+    position: absolute;
+    bottom: 50%;
+    transition: .3s ease-out all;
+    transform: translate(0px,40px);
+}
+
+.item-menu:hover{
+    background: var(--bg-green-hover)!important;
+    cursor: pointer;
+}
+
+.card-content{
+    margin-top: 2rem;
+    border: 0px;
+    border-radius: 1rem;
+    min-height: 60vh;
+}
+
+.cardZ{
+    border: 0px;
+    border-radius: 1rem;
+    min-height: 60vh;
+}
+
+.bg-body{
+    background: #f2f3f9!important;
+}
+
+.titleError{
+    font-size: 10rem!important;
+}
+
+.spaceError{
+    margin-top: 32vh;
+}
+
+.selected{
+    background-color: var(--bg-green-hover)!important;
+}
+
+.screenLoad{
+    background: var(--bg-green-hover)!important;
+    color: white;
+    height: 100vh; 
+    transition: all 0s, opacity 0.5s linear;
+    z-index: 101;
+}
+
+.bgError{
+    background: var(--bg-green)!important;
+}
+
+.closeScreen{
+    opacity: 0;
+    display: none;
+}
+
+.spaceLoad{
+    height: 45vh;
+}
+
+.contentBody{
+    z-index: 100;
+    position: fixed;
+}
+
+/* Page sections  */
+
+.col-menu{
+    padding: 0!important;
+}
+
+.row-menu{
+    margin-right: 0px!important;
+}
+
+.menu-zysac-menu{
+    height: 100vh;
+    background: var(--bg-green)!important;
+    padding: 1rem;
+}
+
+.menu-sticky{
+    position: fixed;
+    width: inherit;
+    max-width: inherit;
+}
+
+.drop-fix{
+    right: 0!important;
+    left: auto!important;
+}
+
+/* Mobile menu */
+
+@media only screen and (max-width: 995px) {
+.content-center{
+    margin-left: 1rem;
+}
+
+.menu-none{
+    display: none!important;
+}
+}
