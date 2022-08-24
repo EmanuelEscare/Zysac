@@ -33,7 +33,10 @@
                     <th scope="col">Teléfono</th>
                     <th scope="col">Titular</th>
                     <th scope="col">N. de casa</th>
+
                     <!---<th scope="col">Añadir residente</th>--->
+                    <th scope="col">Llamar Residente</th>
+                    <th scope="col">SMS WhatsApp</th>
                     <th scope="col">Modificar</th>
                     <th scope="col">Eliminar</th>
                   </tr>

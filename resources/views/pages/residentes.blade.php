@@ -12,6 +12,21 @@
       Solo residente    
       @endif</td>
     <td>{{$residente->residencia->numero_casa}}</td>
+    
+    <td>
+      <div class="d-grid gap-2">
+      <!---EN EL HREF VA LA RUTA QUE MANDA EL PODER LLAMAR A UN RESIDENTE LA VISTA-->
+      <a href="tel:{{$residente->teléfono}}" class="btn btn-primary btn-lg"><i class="fa-solid fa-phone"></i></a>
+      </div>
+  </td>
+
+  <td>
+    <div class="d-grid gap-2">
+    <!---EN EL HREF VA LA RUTA QUE MANDA EL PODER MANDAR UN WHATS APP A UN RESIDENTE LA VISTA-->
+    <a href="https://wa.me/{{$residente->teléfono}}/?text=Hola {{$residente->nombre}} soy el guardia y me contacto desde caseta, tiene una visita." target="_blank" class="btn btn-success btn-lg"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+</td>
+
 
 
 

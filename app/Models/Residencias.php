@@ -31,7 +31,7 @@ class Residencias extends Model
         return LogOptions::defaults()
         ->logOnly(['numero_casa', 'nombre_dueño', 'telefono', 'direccion'])
         ->useLogName(auth()->user()->name)
-        ->setDescriptionForEvent(fn(string $eventName) => "Se ha ".translate($eventName)." un residencia");;;
+        ->setDescriptionForEvent(fn(string $eventName) => "Se ha ".translate_description($eventName)." una residencia");;;
         // Chain fluent methods for configuration options
     }
 

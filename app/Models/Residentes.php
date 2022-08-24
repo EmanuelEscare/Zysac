@@ -32,7 +32,7 @@ class Residentes extends Model
         return LogOptions::defaults()
         ->logOnly(['nombre', 'email', 'telefono', 'titular', 'id_casa'])
         ->useLogName(auth()->user()->name)
-        ->setDescriptionForEvent(fn(string $eventName) => "Se ha ".translate($eventName)." un residente");;;
+        ->setDescriptionForEvent(fn(string $eventName) => "Se ha ".translate_description($eventName)." un residente");;;
         // Chain fluent methods for configuration options
     }
 

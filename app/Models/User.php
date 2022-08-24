@@ -32,7 +32,7 @@ class User extends Authenticatable
         return LogOptions::defaults()
         ->logOnly(['name', 'teléfono', 'password', 'curp', 'rol'])
         ->useLogName(auth()->user()->name)
-        ->setDescriptionForEvent(fn(string $eventName) => "Se ha ".translate($eventName)." un usuario");
+        ->setDescriptionForEvent(fn(string $eventName) => "Se ha ".translate_description($eventName)." un usuario");
         // Chain fluent methods for configuration options
     }
     /**
